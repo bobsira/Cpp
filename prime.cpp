@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 bool isDivisible(int number, int divisor);
 bool isPrime(int number);
 int main(int argc, char const *argv[]) {
@@ -10,7 +11,7 @@ int main(int argc, char const *argv[]) {
   return 0;
 }
 bool isPrime(int number){
-  for (int i = 2; i < number; i++) {
+  for (int i = 2; i < sqrt(number); i++) {
     if (isDivisible(number,i)) {
       return false;
     }
