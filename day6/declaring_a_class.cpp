@@ -9,5 +9,8 @@ class Cat {
 
 int main(int argc, char const *argv[]) {
   Cat Frisky; // define a Cat
+
+  //Frisky.itsWeight = 50;
+  //Frisky.Meow();
   return 0;
 }
