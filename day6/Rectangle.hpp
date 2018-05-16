@@ -1,7 +1,7 @@
 // Begin Rectangle.hpp
 #include <iostream>
 
-class Point {             // holds x,y coordinates
+struct Point {             // holds x,y coordinates
 private:
   int itsX;
   int itsY;
@@ -23,7 +23,7 @@ public:
   }
 };  // end of Point class declaration
 
-class Rectangle {
+struct Rectangle {
 private:
   Point itsUpperLeft;
   Point itsUpperRight;
