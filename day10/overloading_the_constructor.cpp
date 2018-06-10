@@ -18,11 +18,19 @@ Rectangle::Rectangle(){
   itsWidth = 5;
   itsLength = 10;
 }
+// Rectangle::Rectangle():
+// itsWidth(5),
+// itsLength(10)
+// {}
 
 Rectangle::Rectangle(int width, int length){
   itsWidth = width;
   itsLength = length;
 }
+// Rectangle::Rectangle(int width,int length):
+// itsWidth(width),
+// itsLength(length)
+// {}
 
 int main(){
   Rectangle Rect1;
