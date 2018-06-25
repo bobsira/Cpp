@@ -10,6 +10,7 @@ public:
   int GetItsVal() const { return itsVal;}
   void SetItsVal(int x) { itsVal = x; }
   void Increment(){++itsVal;}
+  void operator++ () { ++itsVal; }
 };
 
 Counter::Counter():
@@ -20,6 +21,8 @@ int main(int argc, char const *argv[]) {
   Counter i;
   std::cout << "The value of i is " << i.GetItsVal() << std::endl;
   i.Increment();
+  std::cout << "The value of i is " << i.GetItsVal() << std::endl;
+  ++i;
   std::cout << "The value of i is " << i.GetItsVal() << std::endl;
   return 0;
 }
